@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foto Kenangan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fbfdfa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #555;
+    }
+
+    header {
+      padding: 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #7a6fa1;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      width: 90%;
+      max-width: 900px;
+      margin-bottom: 30px;
+    }
+
+    .grid img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0px 4px 12px rgba(150, 150, 200, 0.25);
+      transition: transform 0.3s ease;
+    }
+
+    .grid img:hover {
+      transform: scale(1.03);
+    }
+
+    button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #a8c6ff;
+    color: #fff;
+    transition: 0.3s ease;
+    margin-bottom: 40px;
+}
+
+button:hover {
+    background: #8fb5ff;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>Memory 12 MIPA 1</header>
+
+  <p style="font-size:1.2rem; color:#7a6fa1; margin-top:-10px; margin-bottom:25px; text-align:center; max-width:700px;">
+    Ini adalah foto kenangan siswa siswi SMAN 1 RENGASDENGKLOK lulusan 2025.
+  </p>
+
+  <button onclick="playMusic()">"klick Disini"</button>
+
+  <div class="grid">
+    <img src="./281b2a0c-db71-47cc-8261-f06f03a98fc9.jpeg" alt="Foto 1" />
+    <img src="./846b2138-4a44-454a-8f0c-93f3cbead841.jpeg" alt="Foto 2" />
+    <img src="./6ab2670a-c924-48b1-aa3f-7338bb6d9082.jpeg" alt="Foto 3" />
+    <img src="./5cc14afc-5811-463c-94eb-4036cd9f88e2.jpeg" alt="Foto 4" />
+    <img src="./1ae58ac2-be84-4c8c-a45d-87fbab1bf477.jpeg" alt="Foto 5" />
+    <img src="./5a05fcdd-180f-437a-9c9b-688844b791e5.jpeg" alt="Foto 6" />
+    <img src="./64bb614f-ef88-4dbd-9c69-59b1ca421c3e.jpeg" alt="Foto 7" />
+    <img src="./10690069-7c43-4c3a-9944-e6b03830df11.jpeg" alt="Foto 8" />
+  </div>
+
+  <audio id="music" src="./End of Beginning- Djo Edit Audio [rCuNpuL7P4g].mp3"></audio>
+
+  <script>
+    function playMusic() {
+      const music = document.getElementById('music');
+      music.play();
+    }
+  </script>
+
+</body>
+</html>
